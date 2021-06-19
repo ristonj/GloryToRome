@@ -1,0 +1,194 @@
+---
+Roles:
+- role: &craftsman
+    name: Craftsman
+    material: Wood
+    value: 1
+    number_in_deck: 6
+- role: &laborer
+    name: Laborer
+    material: Rubble
+    value: 1
+    number_in_deck: 6
+- role: &architect
+    name: Architect
+    material: Concrete
+    value: 2
+    number_in_deck: 3
+- role: &legionary
+    name: Legionary
+    material: Brick
+    value: 2
+    number_in_deck: 3
+- role: &merchant
+    name: Merchant
+    material: Stone
+    value: 3
+    number_in_deck: 3
+- role: &patron
+    name: Patron
+    material: Marble
+    value: 3
+    number_in_deck: 3
+
+Cards:
+- card:
+    name: Academy
+    role: *legionary
+    description: May perform one THINKER action after turn during which you performed CRAFTSMAN action
+- card:
+    name: Amphitheatre
+    role: *architect
+    description: May perform one CRAFTSMAN action for each INFLUENCE
+- card:
+    name: Aqueduct
+    role: *architect
+    description: When performing PATRON action may take client from HAND.  Maximum CLIENTELE x 2
+- card:
+    name: Archway
+    role: *legionary
+    description: When performing ARCHITECT action may take material from POOL
+- card:
+    name: Atrium
+    role: *legionary
+    description: When performing MERCHANT action may take from DECK (do not look at card)
+- card:
+    name: Bar
+    role: *laborer
+    description: When performing PATRON action may take card from DECK
+- card:
+    name: Basilica
+    role: *patron
+    description: When performing MERCHANT action may take material from HAND
+- card:
+    name: Bath
+    role: *legionary
+    description: When performing PATRON action each client you hire may perform its action once as it enters CLIENTELE
+- card:
+    name: Bridge
+    role: *architect
+    description: When performing LEGIONARY action may take material from STOCKPILE.  Ignore Palisades.  May take from all opponents
+- card:
+    name: Catacomb
+    role: *merchant
+    description: Game ends immediately.  Score as usual
+- card:
+    name: Circus Maximus
+    role: *merchant
+    description: Each client may perform its action twice when you lead or follow its role
+- card:
+    name: Crane
+    role: *craftsman
+    description: May use any card to lead or follow ARCHITECT
+- card:
+    name: Dock
+    role: *craftsman
+    description: When performing LABORER action may take material from HAND
+- card:
+    name: Domus Aurea
+    role: *merchant
+    description: When performing LEGIONARY action, may tear down matching incomplete building with no material. Foundation -> STOCKPILE, site -> INFLUENCE
+- card:
+    name: Forum Romanum
+    role: *patron
+    description: One client of each role and one of each material in STOCKPILE wins game
+- card:
+    name: Foundry
+    role: *legionary
+    description: May perform one LABORER action for each INFLUENCE
+- card:
+    name: Fountain
+    role: *patron
+    description: When performing CRAFTSMAN action may use cards from DECK. Retain any unused cards in HAND
+- card:
+    name: Garden
+    role: *merchant
+    description: May perform one PATRON action for each INFLUENCE
+- card:
+    name: Gate
+    role: *legionary
+    description: Incomplete MARBLE structures provide FUNCTION
+- card:
+    name: Insula
+    role: *laborer
+    description: Maximum CLIENTELE + 2
+- card:
+    name: Latrine
+    role: *laborer
+    description: Before performing THINKER action may discard one card to POOL
+- card:
+    name: Ludus Magna
+    role: *patron
+    description: Each MERCHANT client counts as any role
+- card:
+    name: Market
+    role: *craftsman
+    description: Maximum VAULT + 2
+- card:
+    name: Palace
+    role: *patron
+    description: May play multiple cards of same role in order to perform additional actions
+- card:
+    name: Palisade
+    role: *craftsman
+    description: Immune to LEGIONARY
+- card:
+    name: Prison
+    role: merchant
+    description: May exchange INFLUENCE for opponent's completed structure
+- card:
+    name: Road
+    role: *laborer
+    description: When adding to STONE structure may use any material
+- card:
+    name: School
+    role: *legionary
+    description: May perform one THINKER action for each INFLUENCE
+- card:
+    name: Scriptorium
+    role: *merchant
+    description: May use one MARBLE material to complete any structure
+- card:
+    name: Sewer
+    role: *merchant
+    description: May place Orders cards used to lead or follow into STOCKPILE at end of turn
+- card:
+    name: Shrine
+    role: *legionary
+    description: Maximum HAND + 2
+- card:
+    name: Stairway
+    role: *patron
+    description: When performing ARCHITECT action may add material to opponent's completed STRUCTURE to make function available to all players
+- card:
+    name: Statue
+    role: *patron
+    description: + 3 VP. May place Statue on any SITE
+- card:
+    name: Storeroom
+    role: *architect
+    description: All clients count as LABORERS
+- card:
+    name: Temple
+    role: *patron
+    description: Maximum HAND + 4
+- card:
+    name: Tower
+    role: *architect
+    description: May use RUBBLE in any STRUCTURE. May lay foundation onto any out of town SITE at no extra cost
+- card:
+    name: Tribunal
+    role: *architect
+    description: After performing THINKER action, may draw a JACK
+- card:
+    name: Villa
+    role: *merchant
+    description: When performing ARCHITECT action may complete Villa with one material
+- card:
+    name: Vomitorium
+    role: *architect
+    description: Before performing THINKER action may discard all cards to POOL
+- card:
+    name: Wall
+    role: *architect
+    description: Immune to LEGIONARY. + 1 VP for every two materials in STOCKPILE
