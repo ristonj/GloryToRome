@@ -6,7 +6,7 @@ class TestYamlDataLoader(unittest.TestCase):
     def test_load(self):
         yaml_loader = yaml_data_loader.YamlDataLoader()
         config = yaml_loader.load_data()
-        for item in config["Roles"]:
+        for item in config["Cards"]:
             print(item)
 
 if __name__ == "__main__":
